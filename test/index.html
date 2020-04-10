@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Formulation in functional syntax of SPECIAL’s Location Ontology V1, with identifier</h1>
+        <p>SemCon Vocabulary modified</p>
+        <p>The documentation can be found in <a href="/images/documents/SPECIAL_D21_M12_V10.pdf">Policy Language V1 (deliverable D2.1).</a></p>
+        <pre>
+        Prefix(:=&lt;Link zu dieser Seite>)
+        Prefix(owl:=&lt;http://www.w3.org/2002/07/owl#&gt;)
+        Prefix(rdf:=&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;)
+        Prefix(spl:=&lt;https://www.specialprivacy.eu/langs/usage-policy#&gt;)
+        Prefix(gdc:=&lt;Link zu dieser Zeit&gt;)
+        Prefix(xml:=&lt;http://www.w3.org/XML/1998/namespace&gt;)
+        Prefix(xsd:=&lt;http://www.w3.org/2001/XMLSchema#&gt;)
+        Prefix(rdfs:=&lt;http://www.w3.org/2000/01/rdf-schema#&gt;)
+
+
+        Ontology(&gt;http://www.specialprivacy.eu/vocabs/data&gt;
+        Import(&gt;https://www.specialprivacy.eu/langs/usage-policy/1.0&gt;)
+
+        Declaration(Class(gdc:Pseudoanonymized))
+        Declaration(Class(gdc:Anonymized))
+        Declaration(Class(gdc:Health))
+        Declaration(Class(gdc:Demographic))
+        Declaration(Class(gdc:SelfGenerated))
+
+
+        Declaration(Class(gdc:Location))
+        Declaration(Class(gdc:Physical))
+        Declaration(Class(gdc:PhysicalActivity))
+        Declaration(Class(gdc:Profile))
+        Declaration(Class(gdc:Social))
+        Declaration(Class(gdc:State))
+        Declaration(Class(gdc:Statistical))
+        Declaration(Class(gdc:UniqueId))
+        ############################
+        #   Classes
+        ############################
+
+        # Class: gdc:Pseudoanonymized (gdc:Pseudoanonymized)
+
+        SubClassOf(gdc:Pseudoanonymized spl:AnyData)
+
+        # Class: gdc:Anonymized (gdc:Anonymized)
+
+        SubClassOf(gdc:Anonymized spl:AnyData)
+
+        # Class: gdc:Health (gdc:Health)
+
+        SubClassOf(gdc:Health spl:AnyData)
+
+        # Class: gdc:Demographic (gdc:Demographic)
+
+        SubClassOf(gdc:Demographic spl:AnyData)
+
+        # Class: gdc:SelfGenerated (gdc:SelfGenerated)
+
+        SubClassOf(gdc:SelfGenerated gdc:Pseudoanonymized)
+
+        
+
+
+
+
+        # Class: gdc:Location (gdc:Location)
+
+        SubClassOf(gdc:Location spl:AnyData)
+
+        # Class: gdc:Physical (gdc:Physical)
+
+        SubClassOf(gdc:Physical spl:AnyData)
+
+        # Class: gdc:Profile (gdc:Profile)
+
+        SubClassOf(gdc:Profile gdc:Derived)
+
+        # Class: gdc:Social (gdc:Social)
+
+        SubClassOf(gdc:Social spl:AnyData)
+
+        # Class: gdc:State (gdc:State)
+
+        SubClassOf(gdc:State spl:AnyData)
+
+        # Class: gdc:Statistical (gdc:Statistical)
+
+        SubClassOf(gdc:Statistical gdc:Derived)
+
+        # Class: gdc:UniqueId (gdc:UniqueId)
+
+        SubClassOf(gdc:UniqueId spl:AnyData)
+
+
+)
+
+
+
+        
+            
+        </pre>
+        <p> </p>
+    </body>
+</html>
