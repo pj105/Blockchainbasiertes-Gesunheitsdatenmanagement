@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Formulation in functional syntax of SPECIAL’s Location Ontology V1, with identifier</h1>
+        <p>SPECIAL Vocabulary modified: purposes</p>
+        <p>The documentation can be found in <a href="/images/documents/SPECIAL_D21_M12_V10.pdf">Policy Language V1 (deliverable D2.1).</a></p>
+        <pre>
+                Prefix(gdp:=&lt;Link zu dieser Seite&gt;)
+                Prefix(spl:=&lt;http://www.specialprivacy.eu/langs/usage-policy#&gt;)
+                Prefix(owl:=&lt;http://www.w3.org/2002/07/owl#&gt;)
+                Prefix(rdf:=&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;)
+                Prefix(xml:=&lt;http://www.w3.org/XML/1998/namespace&gt;)
+                Prefix(xsd:=&lt;http://www.w3.org/2001/XMLSchema#&gt;)
+                Prefix(rdfs:=&lt;http://www.w3.org/2000/01/rdf-schema#&gt;)
+                
+                
+                Ontology(&lt;Link zu dieser Seite&gt;
+                Import(&lt;http://www.specialprivacy.eu/langs/usage-policy/1.0&gt;)
+                
+                Declaration(Class(gdp:Education))
+                Declaration(Class(gdp:Research))
+                Declaration(Class(gdp:Government))
+
+                SubClassOf(gdp:Education gdp:Current)
+                SubClassOf(gdp:Government gdp:Current)
+                SubClassOf(gdp:Research gdp:Current)
+
+                Declaration(Class(gdp:Current))
+                
+                DisjointClasses(
+                   gdp:Education
+                   gdp:Government
+                   gdp:Research
+                )
+                )# end of ontology
+
+        
+            
+        </pre>
+        <p> </p>
+    </body>
+</html>

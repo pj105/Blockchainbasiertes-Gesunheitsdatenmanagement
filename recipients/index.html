@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <!-- Wir aktuell für den Digitalen Patienten verwendet. -->
+    <!-- Hier könnte man zwischen verschiedenen Datenempfängern auswählen: Öffentliche Forschung, Pharma, usw.  -->
+    <body>
+        <h1>Formulation in functional syntax of SPECIAL’s Location Ontology V1, with identifier</h1>
+        <p>SPECIAL Vocabulary modified: recipients</p>
+        <p>The documentation can be found in <a href="/images/documents/SPECIAL_D21_M12_V10.pdf">Policy Language V1 (deliverable D2.1).</a></p>
+        <pre>
+                Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+                Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+                Prefix(spl:=<https://www.specialprivacy.eu/langs/usage-policy#>)
+                Prefix(gvr:=<Link zu dieser Seite>)
+                Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+                Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+                Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+                
+                
+                Ontology(<Link zu dieser Seite>
+                Import(<https://www.specialprivacy.eu/langs/usage-policy/1.0>)
+                
+                Declaration(Class(gvr:Delivery))
+                Declaration(Class(gvr:OtherRecipient))
+                Declaration(Class(gvr:Ours))
+                Declaration(Class(gvr:Public))
+                Declaration(Class(gvr:Same))
+                Declaration(Class(gvr:Unrelated))
+                ############################
+                #   Classes
+                ############################
+                
+                # Class: gvr:Delivery (gvr:Delivery)
+                
+                SubClassOf(gvr:Delivery  spl:AnyRecipient)
+                
+                # Class: gvr:OtherRecipient (gvr:OtherRecipient)
+                
+                SubClassOf(gvr:OtherRecipient  spl:AnyRecipient)
+                
+                # Class: gvr:Ours (gvr:Ours)
+                
+                SubClassOf(gvr:Ours  spl:AnyRecipient)
+                
+                # Class: gvr:Public (gvr:Public)
+                
+                SubClassOf(gvr:Public  spl:AnyRecipient)
+                
+                # Class: gvr:Same (gvr:Same)
+                
+                SubClassOf(gvr:Same  spl:AnyRecipient)
+                
+                # Class: gvr:Unrelated (gvr:Unrelated)
+                
+                SubClassOf(gvr:Unrelated  spl:AnyRecipient)
+                
+                
+                DisjointClasses(gvr:Delivery gvr:OtherRecipient gvr:Ours gvr:Public gvr:Same gvr:Unrelated)
+                )
+            
+            
+        
+            
+        </pre>
+        <p> </p>
+    </body>
+</html>

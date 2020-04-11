@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Formulation in functional syntax of SPECIAL’s Location Ontology V1, with identifier</h1>
+        <p>SPECIAL Vocabulary modified: Processing</p>
+        <p>The documentation can be found in <a href="/images/documents/SPECIAL_D21_M12_V10.pdf">Policy Language V1 (deliverable D2.1).</a></p>
+        <pre>
+                Prefix(:=&lt;Link zu dieser Seite&gt;)
+                Prefix(owl:=&lt;http://www.w3.org/2002/07/owl#&gt;)
+                Prefix(rdf:=&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;)
+                Prefix(spl:=&lt;http://www.specialprivacy.eu/langs/usage-policy#&gt;)
+                Prefix(xml:=&lt;http://www.w3.org/XML/1998/namespace&gt;)
+                Prefix(xsd:=&lt;http://www.w3.org/2001/XMLSchema#&gt;)
+                Prefix(rdfs:=&lt;http://www.w3.org/2000/01/rdf-schema#&gt;)
+                Prefix(gpr:=&lt;Link zu dieser Seite&gt;)
+
+
+                Ontology(&lt;Link zu dieser Seite&gt;)
+                Import(&lt;http://www.specialprivacy.eu/langs/usage-policy/1.0&gt;)
+
+                Declaration(Class(gpr:Aggregate))
+                Declaration(Class(gpr:Analyse))
+                Declaration(Class(gpr:Query))
+                Declaration(Class(gpr:Derive))
+
+                ############################
+                #   Classes
+                ############################
+
+                # Class: gpr:Aggregate (gpr:Aggregate)
+
+                SubClassOf(gpr:Aggregate spl:AnyProcessing)
+
+                # Class: gpr:Analyse (gpr:Analyse)
+
+                SubClassOf(gpr:Analyse gpr:Derive)
+
+                # Class: gpr:Derive (gpr:Derive)
+
+                SubClassOf(gpr:Derive spl:AnyProcessing)
+
+                # Class: gpr:Query (gpr:Query)
+
+                SubClassOf(gpr:Query spl:AnyProcessing)
+
+                )
+
+        
+            
+        </pre>
+        <p> </p>
+    </body>
+</html>
