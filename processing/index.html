@@ -19,9 +19,8 @@
                 Import(&lt;http://www.specialprivacy.eu/langs/usage-policy/1.0&gt;)
 
                 Declaration(Class(gpr:Aggregate))
-                Declaration(Class(gpr:Analyse))
                 Declaration(Class(gpr:Query))
-                Declaration(Class(gpr:Derive))
+                Declaration(Class(gpr:TrainingMachineLearning))
 
                 ############################
                 #   Classes
@@ -31,20 +30,17 @@
 
                 SubClassOf(gpr:Aggregate spl:AnyProcessing)
 
-                # Class: gpr:Analyse (gpr:Analyse)
-
-                SubClassOf(gpr:Analyse gpr:Derive)
-
-                # Class: gpr:Derive (gpr:Derive)
-
-                SubClassOf(gpr:Derive spl:AnyProcessing)
 
                 # Class: gpr:Query (gpr:Query)
 
                 SubClassOf(gpr:Query spl:AnyProcessing)
 
                 )
+                # Class: gpr:TrainingMachineLearning (gpr:TrainingMachineLearning)
 
+                SubClassOf(gpr:TrainingMachineLearning spl:AnyProcessing)
+
+                )
         
             
         </pre>

@@ -20,19 +20,23 @@
 
         Declaration(Class(gdc:Pseudoanonymized))
         Declaration(Class(gdc:Anonymized))
-        Declaration(Class(gdc:Health))
+        Declaration(Class(gdc:Personal))
+        Declaration(Class(gdc:Physiological))
         Declaration(Class(gdc:Demographic))
+        Declaration(Class(gdc:Health))
+        Declaration(Class(gdc:HealthDiagnosis))
+        Declaration(Class(gdc:Treatment))
+        Declaration(Class(gdc:HealthImage))
+        Declaration(Class(gdc:HeatlhGenetic))
         Declaration(Class(gdc:SelfGenerated))
+        Declaration(Class(gdc:Mental))
+        Declaration(Class(gdc:SelfGeneratedGenetic))
+        Declaration(Class(gdc:SelfGeneratedDiagnosis))
+        Declaration(Class(gdc:LocationRelated))
+        Declaration(Class(gdc:SelfGeneratedImage))
+        Declaration(Class(gdc:Behaviour))
+         
 
-
-        Declaration(Class(gdc:Location))
-        Declaration(Class(gdc:Physical))
-        Declaration(Class(gdc:PhysicalActivity))
-        Declaration(Class(gdc:Profile))
-        Declaration(Class(gdc:Social))
-        Declaration(Class(gdc:State))
-        Declaration(Class(gdc:Statistical))
-        Declaration(Class(gdc:UniqueId))
         ############################
         #   Classes
         ############################
@@ -45,57 +49,63 @@
 
         SubClassOf(gdc:Anonymized spl:AnyData)
 
+        # Class: gdc:Personal (gdc:Personal)
+
+        SubClassOf(gdc:Personal spl:AnyData)
+        
+        # Class: gdc:Physiological (gdc:Physiological)
+
+        SubClassOf(gdc:Physiological gdc:Personal)
+
+        # Class: gdc:Demographic (gdc:Demographic)
+
+        SubClassOf(gdc:Demographic gdc:Personal)
+        
         # Class: gdc:Health (gdc:Health)
 
         SubClassOf(gdc:Health spl:AnyData)
 
-        # Class: gdc:Demographic (gdc:Demographic)
+        # Class: gdc:HealthDiagnosis (gdc:HealthDiagnosis)
 
-        SubClassOf(gdc:Demographic spl:AnyData)
+        SubClassOf(gdc:HealthDiagnosis gdc:Health)
+
+        # Class: gdc:Treatment (gdc:Treatment)
+
+        SubClassOf(gdc:Treatment gdc:Health)
+
+        # Class: gdc:HealthImage (gdc:HealthImage)
+
+        SubClassOf(gdc:HealthImage gdc:Health)
+
+        # Class: gdc:HealthGenetic (gdc:HealthGenetic)
+
+        SubClassOf(gdc:HealthGenetic gdc:Health)
 
         # Class: gdc:SelfGenerated (gdc:SelfGenerated)
 
-        SubClassOf(gdc:SelfGenerated gdc:Pseudoanonymized)
+        SubClassOf(gdc:SelfGenerated spl:AnyData)
 
+        # Class: gdc:SelfGeneratedGenetic (gdc:SelfGeneratedGenetic)
+
+        SubClassOf(gdc:SelfGeneratedGenetic gdc:SelfGenerated)
+
+        # Class: gdc:SelfGeneratedDiagnosis (gdc:SelfGeneratedDiagnosis)
+
+        SubClassOf(gdc:SelfGeneratedDiagnosis gdc:SelfGenerated)
         
+        # Class: gdc:LocationRelated (gdc:LocationRelated)
 
-
-
-
-        # Class: gdc:Location (gdc:Location)
-
-        SubClassOf(gdc:Location spl:AnyData)
-
-        # Class: gdc:Physical (gdc:Physical)
-
-        SubClassOf(gdc:Physical spl:AnyData)
-
-        # Class: gdc:Profile (gdc:Profile)
-
-        SubClassOf(gdc:Profile gdc:Derived)
-
-        # Class: gdc:Social (gdc:Social)
-
-        SubClassOf(gdc:Social spl:AnyData)
-
-        # Class: gdc:State (gdc:State)
-
-        SubClassOf(gdc:State spl:AnyData)
-
-        # Class: gdc:Statistical (gdc:Statistical)
-
-        SubClassOf(gdc:Statistical gdc:Derived)
-
-        # Class: gdc:UniqueId (gdc:UniqueId)
-
-        SubClassOf(gdc:UniqueId spl:AnyData)
-
-
-)
-
-
-
+        SubClassOf(gdc:LocationRelated gdc:SelfGenerated)
         
+        # Class: gdc:SelfGeneratedImage (gdc:SelfGeneratedImage)
+
+        SubClassOf(gdc:SelfGeneratedImage gdc:SelfGenerated)
+                
+        # Class: gdc:Behaviour (gdc:Behaviour)
+
+        SubClassOf(gdc:Behaviour gdc:SelfGenerated)
+
+        )
             
         </pre>
         <p> </p>

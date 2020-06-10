@@ -19,43 +19,35 @@
                 Ontology(<https://pj105.github.io/Blockchainbasiertes-Gesunheitsdatenmanagement/recipients/index.html>
                 Import(<https://www.specialprivacy.eu/langs/usage-policy/1.0>)
                 
-                Declaration(Class(gvr:Delivery))
-                Declaration(Class(gvr:OtherRecipient))
-                Declaration(Class(gvr:Ours))
-                Declaration(Class(gvr:Public))
-                Declaration(Class(gvr:Same))
-                Declaration(Class(gvr:Unrelated))
+                Declaration(Class(gvr:UniversityPublicResearchInstitution))
+                Declaration(Class(gvr:CommercialResearchHealthcare))
+                Declaration(Class(gvr:CommercialResearchOtherSectors))            
+                Declaration(Class(gvr:PartyInAgreementOnTheUseOfTheData))
+
+                
                 ############################
                 #   Classes
                 ############################
                 
-                # Class: gvr:Delivery (gvr:Delivery)
+                # Class: gvr:UniversityPublicResearchInstitution (gvr:UniversityPublicResearchInstitution)
                 
-                SubClassOf(gvr:Delivery  spl:AnyRecipient)
+                SubClassOf(gvr:UniversityPublicResearchInstitution  spl:AnyRecipient)
                 
-                # Class: gvr:OtherRecipient (gvr:OtherRecipient)
+                # Class: gvr:CommercialResearchHealthcare (gvr:CommercialResearchHealthcare)
                 
-                SubClassOf(gvr:OtherRecipient  spl:AnyRecipient)
+                SubClassOf(gvr:CommercialResearchHealthcare  spl:AnyRecipient)
                 
-                # Class: gvr:Ours (gvr:Ours)
+                # Class: gvr:CommercialResearchOtherSectors (gvr:CommercialResearchOtherSectors)
                 
-                SubClassOf(gvr:Ours  spl:AnyRecipient)
+                SubClassOf(gvr:CommercialResearchOtherSectors  spl:AnyRecipient)
                 
-                # Class: gvr:Public (gvr:Public)
+                # Class: gvr:PartyInAgreementOnTheUseOfTheData (gvr:PartyInAgreementOnTheUseOfTheData)
                 
-                SubClassOf(gvr:Public  spl:AnyRecipient)
+                SubClassOf(gvr:PartyInAgreementOnTheUseOfTheData  spl:AnyRecipient)
                 
-                # Class: gvr:Same (gvr:Same)
-                
-                SubClassOf(gvr:Same  spl:AnyRecipient)
-                
-                # Class: gvr:Unrelated (gvr:Unrelated)
-                
-                SubClassOf(gvr:Unrelated  spl:AnyRecipient)
+
                 
                 
-                DisjointClasses(gvr:Delivery gvr:OtherRecipient gvr:Ours gvr:Public gvr:Same gvr:Unrelated)
-                )
             
             
         

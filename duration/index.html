@@ -14,20 +14,16 @@
             Prefix(xsd:=&lt;http://www.w3.org/2001/XMLSchema#&gt;)
             Prefix(rdfs:=&lt;http://www.w3.org/2000/01/rdf-schema#&gt;)
             
-            Ontology(&lt;https://pj105.github.io/Blockchainbasiertes-Gesunheitsdatenmanagement/duration/index.html&gt;)
+            Ontology(&lt;https://pj105.github.io/Blockchainbasiertes-Gesunheitsdatenmanagement/duration/index.html&gt;
             Import(&lt;http://www.specialprivacy.eu/langs/usage-policy/1.0&gt;)
             
             Declaration(Class(gvd:Indefinitely))
-            Declaration(Class(gvd:TimeOfResearch))
-            Declaration(Class(gvd:TimeOfDataPreparation))
             Declaration(Class(gvd:FiveYears))
             Declaration(Class(gvd:TenYears))
             Declaration(Class(gvd:TwentyYears))
 
 
             SubClassOf(gvd:Indefinitely spl:AnyDuration)
-            SubClassOf(gvd:TimeOfResearch spl:AnyDuration)
-            SubClassOf(gvd:TimeOfDataPreparation spl:AnyDuration)
             SubClassOf(gvd:FiveYears spl:AnyDuration)
             SubClassOf(gvd:TenYears spl:AnyDuration)
             SubClassOf(gvd:TwentyYears spl:AnyDuration)
@@ -35,8 +31,6 @@
            
             DisjointClasses(
             gvd:Indefinitely
-            gvd:TimeOfResearch
-            gvd:TimeOfDataPreparation
             gvd:FiveYears
             gvd:TenYears
             gvd:TwentyYears

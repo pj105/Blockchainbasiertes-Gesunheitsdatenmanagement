@@ -16,27 +16,15 @@
                 Ontology(&lt;https://pj105.github.io/Blockchainbasiertes-Gesunheitsdatenmanagement/locations/index.html&gt;
                 Import(&lt;http://www.specialprivacy.eu/langs/usage-policy/1.0&gt;)
 
-                Declaration(Class(glc:ControllerServers))
                 Declaration(Class(glc:EU))
                 Declaration(Class(glc:EULike))
                 Declaration(Class(glc:ThirdCountries))
-                Declaration(Class(glc:OurServers))
-                Declaration(Class(glc:ProcessorServers))
                 Declaration(Class(glc:Germany))
 
-                SubClassOf(glc:ControllerServers spl:OurServers)
                 SubClassOf(glc:EU spl:AnyLocation)
                 SubClassOf(glc:EULike spl:AnyLocation)
                 SubClassOf(glc:ThirdCountries spl:AnyLocation)
-                SubClassOf(glc:OurServers spl:AnyLocation)
-                SubClassOf(glc:ProcessorServers spl:OurServers)
                 SubClassOf(glc:Germany spl:AnyLocation)
-
-
-                DisjointClasses(
-                    glc:ControllerServers 
-                    glc:ProcessorServers
-                    )
 
                 DisjointClasses(
                     glc:Germany
