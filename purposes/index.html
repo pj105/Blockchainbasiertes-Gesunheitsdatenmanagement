@@ -20,30 +20,16 @@
                 Declaration(Class(gdp:Education))
                 Declaration(Class(gdp:Government))
                 Declaration(Class(gdp:MedicalProductDevelopment))
-                Declaration(Class(gdp:Pharmaceutical))
-                Declaration(Class(gdp:Technical))
-                Declaration(Class(gdp:Digital))
                 Declaration(Class(gdp:Treatment))
                 Declaration(Class(gdp:MarketResearch))
                 Declaration(Class(gdp:AdministrationProcessOptimization))
 
-
                 SubClassOf(gdp:Education spl:AnyPurpose)
                 SubClassOf(gdp:Government spl:AnyPurpose)
                 SubClassOf(gdp:MedicalProductDevelopment spl:AnyPurpose)
-                SubClassOf(gdp:Pharmaceutical  gdp:MedicalProductDevelopment)
-                SubClassOf(gdp:Technical  gdp:MedicalProductDevelopment)
-                SubClassOf(gdp:Digital  gdp:MedicalProductDevelopment)
                 SubClassOf(gdp:Treatment spl:AnyPurpose)
                 SubClassOf(gdp:MarketResearch spl:AnyPurpose)
                 SubClassOf(gdp:AdministrationProcessOptimization spl:AnyPurpose)
-
-
-                DisjointClasses(
-                    gdp:Pharmaceutical
-                    gdp:Technical
-                    gdp:Digital
-                )
 
                 )# end of ontology
 
